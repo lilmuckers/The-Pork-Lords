@@ -34,9 +34,9 @@ var spawn_cloud = function(){
 
 var spawn_bird = function(){
 	var positive = Math.floor(Math.random()*11) > 5 ? true : false;
-	var class="bird-left"; 
-	if(positive){ class="bird-right"; }
-	var bird = $('<div class="bird '+class+'" frames="5" style="display:none;">&nbsp;</div>');
+	var klass="bird-left"; 
+	if(positive){ klass="bird-right"; }
+	var bird = $('<div class="bird '+klass+'" frames="5" style="display:none;">&nbsp;</div>');
 	bird.appendTo('#sky');
 	var speed = (Math.floor(Math.random()*70)+1)*10;
 	if(speed < 40){ bird.remove(); return false; }
